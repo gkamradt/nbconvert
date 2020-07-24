@@ -90,12 +90,6 @@ function nbconvert_function($atts) {
   $last_update_date_time = nbconvert_get_most_recent_git_change_for_file_from_api($url);
 
   $converted_nb = '<div class="notebook">
-    <div class="nbconvert-labels">
-      <label class="github-link">
-        <a href="'.$url.'" target="_blank">Check it out on github</a>
-        <label class="github-last-update"> Last updated: '.$last_update_date_time.'</label>
-      </label>
-      </div>
     <div class="nbconvert">'.$nb_output.'
     </div>
   </div>';
